@@ -1,0 +1,11 @@
+# Telegram Bot Token
+telegram_token: "YOUR_BOT_TOKEN_HERE"
+
+# Telegram Supergroup ID
+telegram_supergroup: "-1002624828071"
+
+# Path to store the SQLite database (optional)
+database: "data.db"
+
+# Optional settings (leave as is unless needed)
+log_level: "info"
