@@ -1,56 +1,65 @@
-time_zone: UTC
-time_format: ""
-git_executable: /opt/homebrew/bin/git
-go_executable: /opt/homebrew/bin/go
-ffmpeg_executable: /opt/homebrew/bin/ffmpeg
+time_zone: Europe/Lisbon
+time_format: 02 Jan, 2006 - Mon @ 15:04
+
+git_executable: /usr/bin/git
+go_executable: /usr/bin/go
+ffmpeg_executable: /usr/bin/ffmpeg
 debug_mode: false
+
 use_github_binaries: false
-architecture: ""
+architecture: amd64
+
 telegram:
-    bot_token: 8031305105:AAGoTlWopPqCcwVXM3G_V2kgiZDgJZ2i5EU
-    api_url: https://api.telegram.org
-    sudo_users_id: []
-    owner_id: 0
-    target_chat_id: 0
-    self_hosted_api: false
-    skip_video_stickers: false
-    skip_setting_commands: false
-    send_my_presence: false
-    send_my_read_receipts: false
-    silent_confirmation: false
-    confirmation_type: emoji
-    emoji_confirmation: null
-    skip_startup_message: false
-    spoiler_as_viewonce: false
-    reactions: false
+  bot_token: 8031305105:AAGoTlWopPqCcwVXM3G_V2kgiZDgJZ2i5EU # Your Telegram bot token
+  self_hosted_api: false
+  owner_id: 704338780 # Replace with your Telegram user ID
+  sudo_users_id:
+    - 704338780 # Replace with your Telegram user ID
+  target_chat_id: -1002590061999 # Your Telegram group ID
+  skip_video_stickers: false
+  skip_setting_commands: false
+  send_my_presence: false
+  send_my_read_receipts: false
+  silent_confirmation: true
+  confirmation_type: "emoji"
+  skip_startup_message: false
+  spoiler_as_viewonce: true
+  reactions: true
+
 whatsapp:
-    login_database:
-        type: sqlite3
-        url: file:wawebstore.db?foreign_keys=on
-    sticker_metadata:
-        pack_name: WaTgBridge
-        author_name: WaTgBridge
-    session_name: watgbridge
-    tag_all_allowed_groups: []
-    ignore_chats: []
-    status_ignored_chats: []
-    skip_documents: false
-    skip_images: false
-    skip_gifs: false
-    skip_videos: false
-    skip_voice_notes: false
-    skip_audios: false
-    skip_status: false
-    skip_stickers: false
-    skip_contacts: false
-    skip_locations: false
-    skip_profile_picture_updates: false
-    skip_group_settings_updates: false
-    skip_chat_details: false
-    send_revoked_message_updates: false
-    whatsmeow_debug_mode: false
-    send_my_messages_from_other_devices: false
-    create_thread_for_info_updates: false
+  session_name: watgbridge
+  tag_all_allowed_groups:
+    - 91xxxxxxxxxx-xxxxxxxxxx
+    - 91xxxxxxxxxx-xxxxxxxxxx
+    - 91xxxxxxxxxx-xxxxxxxxxx
+    - 12xxxxxxxxxxxxx669
+  ignore_chats:
+    - 91xxxxxxxxxx
+    - 12xxxxxxxxxxxxx669
+  status_ignored_chats:
+    - 91xxxxxxxxxx
+    - 1xxxxxxxxxx
+  skip_documents: false
+  skip_images: false
+  skip_gifs: false
+  skip_videos: false
+  skip_voice_notes: false
+  skip_audios: false
+  skip_stickers: false
+  skip_status: false
+  skip_contacts: false
+  skip_locations: false
+  skip_profile_picture_updates: false
+  skip_group_settings_updates: false
+  skip_chat_details: true
+  send_revoked_message_updates: false
+  whatsmeow_debug_mode: false
+  send_my_messages_from_other_devices: false
+  create_thread_for_info_updates: false
+  sticker_metadata:
+    pack_name: WaTgBridge
+    author_name: WaTgBridge
+
 database:
-    file: watgbridge.db
-    type: sqlite3
+  type: sqlite
+  path: ./gobot.sqlite.db
