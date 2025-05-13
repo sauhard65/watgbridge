@@ -12,9 +12,9 @@ architecture: amd64
 telegram:
   bot_token: 8031305105:AAGoTlWopPqCcwVXM3G_V2kgiZDgJZ2i5EU # Your Telegram bot token
   self_hosted_api: false
-  owner_id: 704338780 # Replace this with your Telegram user ID
+  owner_id: 7323544557 # Replace this with your Telegram user ID
   sudo_users_id:
-    - 704338780 # Replace this with your Telegram user ID
+    - 7323544557 # Replace this with your Telegram user ID
   target_chat_id: -1002590061999 # Your Telegram group ID
   skip_video_stickers: false
   skip_setting_commands: false
