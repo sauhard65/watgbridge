@@ -12,9 +12,9 @@ architecture: amd64
 telegram:
   bot_token: 8031305105:AAGoTlWopPqCcwVXM3G_V2kgiZDgJZ2i5EU # Your Telegram bot token
   self_hosted_api: false
-  owner_id: 704338780 # Replace with your Telegram user ID
+  owner_id: 704338780 # Replace this with your Telegram user ID
   sudo_users_id:
-    - 704338780 # Replace with your Telegram user ID
+    - 704338780 # Replace this with your Telegram user ID
   target_chat_id: -1002590061999 # Your Telegram group ID
   skip_video_stickers: false
   skip_setting_commands: false
@@ -28,17 +28,9 @@ telegram:
 
 whatsapp:
   session_name: watgbridge
-  tag_all_allowed_groups:
-    - 91xxxxxxxxxx-xxxxxxxxxx
-    - 91xxxxxxxxxx-xxxxxxxxxx
-    - 91xxxxxxxxxx-xxxxxxxxxx
-    - 12xxxxxxxxxxxxx669
-  ignore_chats:
-    - 91xxxxxxxxxx
-    - 12xxxxxxxxxxxxx669
-  status_ignored_chats:
-    - 91xxxxxxxxxx
-    - 1xxxxxxxxxx
+  tag_all_allowed_groups: [] # Add any allowed group IDs here
+  ignore_chats: [] # Add any chats you want to ignore here
+  status_ignored_chats: [] # Add any chats whose status updates you want to ignore
   skip_documents: false
   skip_images: false
   skip_gifs: false
