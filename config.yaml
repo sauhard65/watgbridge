@@ -10,12 +10,12 @@ use_github_binaries: false
 architecture: amd64
 
 telegram:
-  bot_token: 8031305105:AAGoTlWopPqCcwVXM3G_V2kgiZDgJZ2i5EU # Your Telegram bot token
+  bot_token: 7738666438:AAGpH5JEKshpTNwcxyZBDUZ2UJS-v6-vKbQ # Your Telegram bot token
   self_hosted_api: false
-  owner_id: 7323544557 # Replace this with your Telegram user ID
+  owner_id: 780369383 # Your Telegram user ID (@Lisbontravels)
   sudo_users_id:
-    - 7323544557 # Replace this with your Telegram user ID
-  target_chat_id: -1002590061999 # Your Telegram group ID
+    - 780369383 # Same as owner ID
+  target_chat_id: -1002204500980 # Your Telegram supergroup ID
   skip_video_stickers: false
   skip_setting_commands: false
   send_my_presence: false
