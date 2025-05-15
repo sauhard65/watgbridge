@@ -10,12 +10,12 @@ use_github_binaries: false
 architecture: amd64
 
 telegram:
-  bot_token: 7738666438:AAGpH5JEKshpTNwcxyZBDUZ2UJS-v6-vKbQ # Your Telegram bot token
+  bot_token: "YOUR_TELEGRAM_BOT_TOKEN_HERE"
   self_hosted_api: false
-  owner_id: 780369383 # Your Telegram user ID (@Lisbontravels)
+  owner_id: YOUR_TELEGRAM_USER_ID_HERE
   sudo_users_id:
-    - 780369383 # Same as owner ID
-  target_chat_id: -1002204500980 # Your Telegram supergroup ID
+    - YOUR_TELEGRAM_USER_ID_HERE
+  target_chat_id: YOUR_TELEGRAM_SUPERGROUP_ID_HERE
   skip_video_stickers: false
   skip_setting_commands: false
   send_my_presence: false
@@ -28,9 +28,9 @@ telegram:
 
 whatsapp:
   session_name: watgbridge
-  tag_all_allowed_groups: [] # Add any allowed group IDs here
-  ignore_chats: [] # Add any chats you want to ignore here
-  status_ignored_chats: [] # Add any chats whose status updates you want to ignore
+  tag_all_allowed_groups: [] 
+  ignore_chats: [] 
+  status_ignored_chats: [] 
   skip_documents: false
   skip_images: false
   skip_gifs: false
